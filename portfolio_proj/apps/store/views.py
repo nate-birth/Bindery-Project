@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, HttpResponse
 
-# Create your views here.
+def store(request):
+    return HttpResponse("Store Placeholder")

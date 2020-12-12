@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #00435c;
+}
+#wrapper{
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px 5px 20px;
+    background-color: #057c88;
+    border: 1px solid #002033;
+}
+#header{
+    padding: 10px 5px;
+    background-color: #ffffff;
+    border: 2px solid #00435c;
+    border-radius: 5px;
+}
+#logo{
+    width: 36.1%;
+    /* background-color: #ffffff;
+    border-radius: 100px;
+    border: 6px solid #002033; */
+}
+#mainLogo{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+#logo li{
+    font-size: 9pt;
+    text-decoration: none;
+}
+#logo a{
+    text-decoration: none;
+    vertical-align: middle;
+}
+.navlinks{
+    width: 29.93%;
+    text-align: center;
+    vertical-align: top;
+    margin: 100px 0;
+    background-color: #f4deb0;
+    padding: 5px;
+    border: 2px solid #00435c;
+    border-radius: 5px;
+    
+}
+.navbar{
+    display: inline-block;
+}
+/* #footerList{
+    text-align: center;
+} */
+#footerList{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 2px;
+    margin: 10px 42.75%;
+    /* text-align: center; */
+    background-color: #ffffff;
+    border: 2px solid #c4972d;
+    border-radius: 7px;
+}
+#footerList li{
+    display: inline;
+    padding: 5px 10px;
+}
+.navlinks a{
+    float: left;
+    text-decoration: none;
+    width: 42%;
+    margin: 0 5px;
+    padding: 5px;
+    color: #c4972d;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 15pt;
+    border: 2px solid #c4972d;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+/* #footer{
+    margin-top: 20px;
+} */
+.footerIcon img{
+    width: 24px;
+}
+.headerList{
+    margin: 5px 30%;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #057c88;
+}
+sub{
+    display: block;
+    margin: 0 42.46%;
+    color: #f4deb0;
+    text-shadow: 
+        -1px -1px 0 #00435c, 
+        1px 1px 0 #00435c;
+}

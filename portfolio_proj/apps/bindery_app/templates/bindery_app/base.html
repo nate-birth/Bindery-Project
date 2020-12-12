@@ -1,15 +1,43 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title></title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <title>BB&P</title>
+    <link rel="shortcut icon" href="{% static 'bindery_app/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'bindery_app/css/base.css' %}">
 </head>
 <body>
-    {% block content %}{% endblock %}
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <div id="wrapper">
+        <div id="header">
+            <div id="products" class="navbar navlinks">
+                <a href="#">Projects</a>
+                <a href="#">Conservation</a>
+            </div>
+            <div id="logo" class="navbar">
+                <img id="mainLogo" src="{% static 'bindery_app/img/bbp_logo_full.png' %}" alt="Birth Bindery and Press logo">
+
+            </div>
+            <div id="shopabout" class="navbar navlinks">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+            </div>
+            <hr>
+        </div>
+        {% block content %}{% endblock %}
+        <div id="footer">
+            <ul id="footerList">
+                <li><a class="footerIcon" href="#"><img src="{% static 'bindery_app/img/gmail.png' %}" alt="Email link"></a></li>
+                <li><a class="footerIcon" href="#"><img src="{% static 'bindery_app/img/instagram.png' %}" alt="Instagram link"></a></li>
+                <li><a class="footerIcon" href="#"><img src="{% static 'bindery_app/img/linkin.png' %}" alt="LinkedIn link"></a></li>
+            </ul>
+            <sub>Birth Bindery & Press LLC</sub>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
 </body>
 </html>

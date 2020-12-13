@@ -40,7 +40,7 @@ body{
     vertical-align: middle;
 }
 .navlinks{
-    width: 29.93%;
+    width: 31.5%;
     text-align: center;
     vertical-align: top;
     margin: 100px 0;
@@ -53,15 +53,11 @@ body{
 .navbar{
     display: inline-block;
 }
-/* #footerList{
-    text-align: center;
-} */
 #footerList{
     display: inline-block;
     list-style: none;
     padding: 10px 2px;
-    margin: 10px 42.75%;
-    /* text-align: center; */
+    margin: 10px 37.89%;
     background-color: #ffffff;
     border: 2px solid #c4972d;
     border-radius: 7px;
@@ -69,11 +65,12 @@ body{
 #footerList li{
     display: inline;
     padding: 5px 10px;
+    vertical-align: middle;
 }
 .navlinks a{
     float: left;
     text-decoration: none;
-    width: 42%;
+    width: 46.5%;
     margin: 0 5px;
     padding: 5px;
     color: #c4972d;
@@ -83,9 +80,6 @@ body{
     background-color: #ffffff;
     border-radius: 7px;
 }
-/* #footer{
-    margin-top: 20px;
-} */
 .footerIcon img{
     width: 24px;
 }
@@ -99,9 +93,20 @@ hr{
 }
 sub{
     display: block;
-    margin: 0 42.46%;
+    margin: 0 43.14%;
     color: #f4deb0;
     text-shadow: 
         -1px -1px 0 #00435c, 
         1px 1px 0 #00435c;
+}
+#content-main{
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #00435c;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+#content-main h1{
+    color: #c4972d;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }

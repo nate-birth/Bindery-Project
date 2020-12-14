@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="add-to-cart">
-                <form action="/add" method="POST">
+                <form action="/store/add" method="POST">
                 {% csrf_token %}
                 <p>Price: ${{ product.price }}</p>
                 <label for="qty">Quantity</label>

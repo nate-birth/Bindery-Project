@@ -13,9 +13,6 @@ class Product(models.Model):
         return f"${round(self.price, 2)}"
 
 class Order(models.Model):
-    email = models.EmailField(max_length=45)
-    first_name = models.CharField(max_length=45)
-    last_name = models.CharField(max_length=45)
     items = models.ManyToManyField(Product, through="OrderItem", related_name="orders")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -34,6 +31,9 @@ class OrderItem(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
 class Address(models.Model):
+    email = models.EmailField(max_length=45, default="email@email.com")
+    first_name = models.CharField(max_length=45, default="test")
+    last_name = models.CharField(max_length=45, default="test")
     address1 = models.CharField(max_length=125)
     address2 = models.CharField(max_length=125)
     city = models.CharField(max_length=125)

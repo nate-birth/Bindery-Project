@@ -27,8 +27,19 @@ def productPage(request, pid):
     return render(request, "store/product.html", context)
 
 def add_to_cart(request):
-    #check to see if there is an order in session
-    #if no order create new order
+    if request.method == 'POST':
+        print(request.POST['pid'])
+        print(request.POST['qty'])
+        #check to see if there is an order in session
+        # if 'cart' not in request.session:
+
+        #     #if no order create new order
+        #     prod_add = Product.objects.get(id=request.POST['pid'])
+        #     print(prod_add.name)
+        #     new_item = OrderItem.objects.create(product=prod_add, qty=request.POST[''])
+        #     new_order = Order.objects.create(items=new_item)
+    
+
     #else continue
     #check if orderItem is already in the order
     #if yes then increment the qty
@@ -36,3 +47,4 @@ def add_to_cart(request):
     #create orderItem
     #add orderItem to order
     #save order in session
+    return redirect(f'/store/')

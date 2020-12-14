@@ -1,4 +1,26 @@
 {% extends "bindery_app/base.html" %}
 {% block content %}
-    <!-- content must be indented here. -->
+    <a id="hero-link" href="/projects">
+        <div id="hero">
+            <h1>Vintage life</h1>
+        </div>
+    </a>
+    <a class="project-link" href="/projects">
+    <div id="featured">
+        <img src="/media/{{ featured.image }}" alt="{{ featured.name }} image">
+        <div id="featured-text">
+            <h4>{{ featured.name }}</h4>
+            <p>{{ featured.description }}</p>
+        </div>
+    </div>
+    </a>
+    <a class="project-link" href="/projects">
+    <div id="recent">
+        <div id="recent-text">
+            <h4>{{ recent.name }}</h4>
+            <p>{{ recent.description }}</p>
+        </div>
+        <img src="/media/{{ recent.image }}" alt="{{ recent.name }} image">
+    </div>
+    </a>
 {% endblock content %}

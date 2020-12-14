@@ -1,7 +1,27 @@
 {% extends "bindery_app/base.html" %}
 {% block content %}
     <div id="content-main">
-        <h1> &#126; Store &#126;</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et odit, dolorem tempora quidem suscipit nulla ducimus fuga veniam error incidunt consequuntur ad non, officia sunt laborum maxime quam alias facere!</p>
+        <div id="store-head">
+            <h1> &#126; Store &#126;</h1>
+            <a href="/cart">Cart </a>
+        </div>
+        {% for product in products %}
+        <div class="store-item">
+            <div class="item-info">
+                <img src="/media/{{ product.image }}" alt="{{ product.name }} Image">
+                <div class="item-desc">
+                    <h4>{{ product.name }}</h4>
+                    <p>{{ product.description }}</p>
+                </div>
+            </div>
+            <div class="shop-btn-form">
+                <form action="/store/product/{{ product.id }}" method="GET">
+                    {% csrf_token %}
+                    <label for="submit">${{ product.price }}</label>
+                    <input type="submit" value="Buy Now">
+                </form>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 {% endblock content %}

@@ -100,13 +100,119 @@ sub{
         1px 1px 0 #00435c;
 }
 #content-main{
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
     margin-top: 5px;
     border: 1px solid #00435c;
-    background-color: #ffffff;
+    background-color: #f4deb0;
     border-radius: 5px;
 }
 #content-main h1{
     color: #c4972d;
     font-family: Georgia, Times, 'Times New Roman', serif;
+}
+#store-head{
+    background: url('/static/bindery_app/img/1.jpg');
+    background-size: 100%;
+    background-position: 0px -178px;
+    height: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #00435c;
+    box-shadow: 0px 5px 10px #00435c;
+}
+#store-head h1, a{
+    display: inline-block;
+}
+
+#store-head a{
+    float: right;
+    margin-top: 23%;
+    background-color: #ffffff;
+    padding: 3px 10px;
+    color: #c4972d;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    border: 3px solid #c4972d;
+    border-radius: 7px;
+}
+.store-item{
+    margin-right: 20px;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #c4972d;
+    border-radius: 5px;
+    display: inline-block;
+    width: 47.76%;
+    height: 410px;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+.item-info img{
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+.shop-btn-form, .item-desc h4{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #00435c;
+}
+.item-desc p{
+    color: #00435c;
+}
+.shop-btn-form label{
+    padding: 5px 10px;
+}
+.shop-btn-form input{
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #c4972d;
+    border: 3px solid #c4972d;
+    border-radius: 7px;
+}
+.product-info, .add-to-cart{
+    margin-right: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #c4972d;
+    border-radius: 5px;
+    background-color: #ffffff;
+    vertical-align: top;
+    text-align: center;
+}
+.product-info img{
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+.product-info{
+    width: 70%;
+}
+.add-to-cart{
+    width: 25.5%;
+}
+.add-to-cart p{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #c4972d;
+    font-size: 18pt;
+}
+.add-to-cart select, label{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #c4972d;
+    font-size: 14pt;
+}
+.add-to-cart select{
+    border-color: #c4972d;
+}
+.add-to-cart input{
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #c4972d;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    border: 3px solid #c4972d;
+    border-radius: 7px;
 }

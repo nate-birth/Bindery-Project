@@ -5,6 +5,7 @@ class Product(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='shop_pics')
     price = models.DecimalField(decimal_places=2, max_digits=8)
+    stock = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

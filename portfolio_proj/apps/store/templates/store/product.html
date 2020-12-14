@@ -1,0 +1,32 @@
+{% extends "bindery_app/base.html" %}
+{% block content %}
+    <div id="content-main">
+        <div id="store-head">
+            <h1> &#126; Store &#126;</h1>
+            <a href="/cart">Cart </a>
+        </div>
+        <div class="product-disp">
+            <div class="product-info">
+                <img src="/media/{{ product.image }}" alt="{{ product.name }} Image">
+                <div class="item-desc">
+                    <h4>{{ product.name }}</h4>
+                    <p>{{ product.description }} {{ product.stock }} left in stock!</p>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <form action="/add" method="POST">
+                {% csrf_token %}
+                <p>Price: ${{ product.price }}</p>
+                <label for="qty">Quantity</label>
+                <select name="qty" id="prod-qty">
+                    {% for val in stock %}
+                    <option value="{{ val }}">{{ val }}</option>
+                    {% endfor %}
+                </select>
+                <input type="hidden" name="pid" value="{{ product.id }}">
+                <input type="submit" value="Add to Cart">
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

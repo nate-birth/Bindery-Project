@@ -1,5 +1,11 @@
 from django.shortcuts import render, redirect, HttpResponse
 from .models import *
+from django.contrib.auth import authenticate, login
+from django.forms.forms import NON_FIELD_ERRORS
+from django.conf import settings
+# from django.core.urlresolvers import reverse
+
+import stripe
 
 def store(request):
     context = {
